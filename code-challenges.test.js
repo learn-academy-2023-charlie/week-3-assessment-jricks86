@@ -37,8 +37,8 @@ describe("fib1", () => {
   // input: number
   // output: array containing the numbers in Fibonacci sequence
   //Declare an array to store the fibonacci sequence
- //For Loop through the sequence until the number is reached
- //Push the current value of the sequence to the end of the array
+ //For Loop through the sequence until the number is reached starting at the 2 index
+ //calculate the next number in the sequence by adding the previous two numbers and push it into the fib array.
   //Return the array
 
 const fibLength1 = 6
