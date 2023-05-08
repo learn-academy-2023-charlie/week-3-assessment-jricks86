@@ -34,8 +34,13 @@ describe("fib1", () => {
   // ReferenceError: fib1 is not defined
 
 // b) Create the function that makes the test pass.
-// input: number
-// output: array containing the numbers in Fibonacci sequence
+  // input: number
+  // output: array containing the numbers in Fibonacci sequence
+  //Declare an array to store the fibonacci sequence
+ //For Loop through the sequence until the number is reached
+ //Push the current value of the sequence to the end of the array
+  //Return the array
+
 const fibLength1 = 6
 // Expected output: [1, 1, 2, 3, 5, 8]
 
@@ -43,14 +48,10 @@ const fibLength2 = 10
 // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 function fib1(number) {
-  //Declare an array to store the fibonacci sequence
   const fib = [1, 1];
-  //For Loop through the sequence until the number is reached
   for (let i = 2; i < number; i++) {
-    //Push the current value of the sequence to the end of the array
     fib.push(fib[i - 1] + fib[i - 2]);
   }
-  //Return the array
   return fib;
 }
 
